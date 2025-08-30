@@ -117,6 +117,14 @@ import { Card } from '@/components/ui/card';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { ChevronDown, ChevronUp, ExternalLink } from 'lucide-react';
 import { useState } from 'react';
+import profile_audition from '@/assets/profile_audition.jpeg'
+import tehkikat_audition from '@/assets/tehkikat_audition.jpeg'
+import pandit_audition from '@/assets/pandit_audition.jpeg'
+import lawyer_audition from '@/assets/lawyer_audition.jpeg'
+import saadhu_audition from '@/assets/saadhu_audition.jpeg'
+import police_audition from '@/assets/police_audition.jpeg'
+
+
 
 
 export function Audition() {
@@ -126,33 +134,33 @@ export function Audition() {
   const auditions = [
     {
       id: 'film1',
-      imageUrl: '/src/assets/profile_audition.jpeg',   // 👈 replace with your image paths
+      imageUrl: profile_audition ,   // 👈 replace with your image paths
       videoUrl: 'https://drive.google.com/file/d/1V_nJaPrKpbRjwwQkp-DqRj8KUqk3J32h/view?usp=sharing'
     },
     {
       id: 'film2',
       type: 'film',
-      imageUrl: '/src/assets/tehkikat_audition.jpeg',
+      imageUrl: tehkikat_audition,
       videoUrl: 'https://drive.google.com/file/d/1YupVBkBFSMpHBqjVttXJPFWTpozuaWFH/view?usp=sharing'
     },
     {
       id: 'film3',
-      imageUrl: '/src/assets/pandit_audition.jpeg',
+      imageUrl: pandit_audition,
       videoUrl: 'https://drive.google.com/file/d/13rSnS8qZLFOkV2TWSxysKbUhqQC_0nDl/view?usp=sharing'
     },
     {
       id: 'film4',
-      imageUrl: '/src/assets/lawyer_audition.jpeg',
+      imageUrl: lawyer_audition,
       videoUrl: 'https://drive.google.com/file/d/14-go5MxRXqGo0RSxHcLP6JRIxQZCdXpE/view?usp=sharing'
     },
     {
       id: 'film5',
-      imageUrl: '/src/assets/saadhu_audition.jpeg',
+      imageUrl: saadhu_audition,
       videoUrl: 'https://drive.google.com/file/d/14CsGhUMcKkWN_fzanSAUDrcO66D-4ivu/view?usp=sharing'
     },
     {
       id: 'film6',
-      imageUrl: '/src/assets/police_audition.jpeg',
+      imageUrl: police_audition,
       videoUrl: 'https://drive.google.com/file/d/14-Gg0TOWDoyKYE2bSibFdM754OAfOr94/view?usp=sharing'
     }
   ];

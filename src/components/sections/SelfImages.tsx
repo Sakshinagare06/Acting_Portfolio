@@ -3,52 +3,62 @@ import { Card } from '@/components/ui/card';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { useState } from 'react';
+import self1 from '@/assets/selfImage/self1.jpg';
+import self2 from '@/assets/selfImage/self2.jpeg';
+import self3 from '@/assets/selfImage/self3.jpg';
+import self4 from '@/assets/selfImage/self4.jpg';
+import self5 from '@/assets/selfImage/self5.jpg';
+import self6 from '@/assets/selfImage/self6.jpg';
+import self7 from '@/assets/selfImage/self7.jpg';
+import self8 from '@/assets/selfImage/self8.jpg';
+import self9 from '@/assets/selfImage/self9.jpg';
+import self10 from '@/assets/selfImage/self10.jpg';
 
 
 export function SelfImages() {
     const { t } = useLanguage();
     const [visibleCount, setVisibleCount] = useState(5);
 
-    const images= [
+    const images = [
         {
             id: 'film1',
-            imageUrl: '/src/assets/selfImage/self1.jpg',   // 👈 replace with your image paths
+            imageUrl: self1,   // 👈 replace with your image paths
         },
         {
             id: 'film2',
-            imageUrl: '/src/assets/selfImage/self7.jpg',
+            imageUrl: self7,
         },
         {
             id: 'film3',
-            imageUrl: '/src/assets/selfImage/self3.jpg',
+            imageUrl: self3,
         },
         {
             id: 'film4',
-            imageUrl: '/src/assets/selfImage/self4.jpg',
+            imageUrl: self4,
         },
         {
             id: 'film5',
-            imageUrl: '/src/assets/selfImage/self5.jpg',
+            imageUrl: self5,
         },
         {
             id: 'film6',
-            imageUrl: '/src/assets/selfImage/self6.jpg'
+            imageUrl: self6,
         },
         {
             id: 'film7',
-            imageUrl: '/src/assets/selfImage/self9.jpg'
+            imageUrl: self9,
         },
         {
             id: 'film8',
-            imageUrl: '/src/assets/selfImage/self8.jpg'
+            imageUrl: self8,
         },
         {
             id: 'film9',
-            imageUrl: '/src/assets/selfImage/self2.jpeg'
+            imageUrl: self2,
         },
         {
             id: 'film10',
-            imageUrl: '/src/assets/selfImage/self10.jpg'
+            imageUrl: self10,
         }
     ];
 
@@ -84,7 +94,7 @@ export function SelfImages() {
                             style={{ animationDelay: `${index * 0.2}s` }}
                         >
                             {/* Thumbnail */}
-                            <div className="w-full h-56  rounded-lg overflow-hidden bg-primary/10">
+                            <div className="w-full h-102  rounded-lg overflow-hidden bg-primary/10">
                                 <img
                                     src={aud.imageUrl}
                                     alt={t(`audition.${aud.id}.title`)}
