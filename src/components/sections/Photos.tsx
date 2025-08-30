@@ -1,4 +1,12 @@
-import { useLanguage } from '@/contexts/LanguageContext';
+import anitadate from '@/assets/anitadate.jpg';
+import AshishChachalani from '@/assets/Ashish chanchalani.jpg';
+import Indrayani from '@/assets/Indrayani.jpg';
+import KunalChhabria from '@/assets/kunal chhabria.jpg';
+import nimKaroliBaba from '@/assets/nimkarolibaba.jpg';
+import unknown from '@/assets/unknown.jpg';
+import vidhwaa from '@/assets/vidhva.jpeg';
+import vyankatMaharaj from '@/assets/vyankat maharaj.jpg';
+import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import {
   Carousel,
@@ -7,18 +15,10 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
+import { useLanguage } from '@/contexts/LanguageContext';
 import Autoplay from 'embla-carousel-autoplay';
-import { Button } from '@/components/ui/button';
 import { SkipForward } from 'lucide-react';
 import { useRef } from 'react';
-import AshishChachalani from '@/assets/Ashish chanchalani.jpg';
-import KunalChhabria from '@/assets/kunal chhabria.jpg';
-import Indrayani from '@/assets/Indrayani.jpg';
-import vyankatMaharaj from '@/assets/vyankat maharaj.jpg';
-import anitadate from '@/assets/anitadate.jpg';
-import unknown from '@/assets/unknown.jpg';
-import vidhwaa from '@/assets/vidhva.jpeg';
-import nimKaroliBaba from '@/assets/nimkarolibaba.jpg';
 // import actorHeadshot from '@/assets/actor-headshot.jpg';
 // import actorHeadshot from '@/assets/actor-headshot.jpg';
 
@@ -61,7 +61,7 @@ export function Photos() {
     },
     {
       id: 6,
-      url: unknown ,
+      url: unknown,
       title: 'Abhijit Chavan',
       description: 'On the set of Laal Chikhal '
     },
@@ -97,7 +97,7 @@ export function Photos() {
       <div className="container mx-auto px-4 relative">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary via-primary-glow to-primary bg-clip-text text-transparent">
-            {t('Shared Frames') || 'Gallery'}
+            {t('photos.title') || 'Gallery'}
           </h2>
         </div>
 
@@ -106,11 +106,11 @@ export function Photos() {
           {/* Top cinema border */}
           <div className="absolute -top-8 left-0 right-0 h-4 bg-gradient-to-r from-transparent via-primary to-transparent opacity-60" />
           <div className="absolute -top-6 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-primary-glow to-transparent" />
-          
+
           {/* Bottom cinema border */}
           <div className="absolute -bottom-8 left-0 right-0 h-4 bg-gradient-to-r from-transparent via-primary to-transparent opacity-60" />
           <div className="absolute -bottom-6 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-primary-glow to-transparent" />
-          
+
           {/* Side film perforations */}
           <div className="absolute -left-6 top-0 bottom-0 w-4 bg-primary/20 rounded-l-lg" style={{
             backgroundImage: `repeating-linear-gradient(
@@ -162,7 +162,7 @@ export function Photos() {
                       />
                       {/* Film grain overlay */}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                      
+
                       {/* Photo info overlay */}
                       <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-500">
                         <h3 className="text-white font-semibold text-lg mb-1">
@@ -179,7 +179,7 @@ export function Photos() {
             </CarouselContent>
             <CarouselPrevious className="bg-primary/20 border-primary/40 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 -left-14" />
             <CarouselNext className="bg-primary/20 border-primary/40 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 -right-14" />
-            
+
             {/* Skip button for fast navigation */}
             <Button
               onClick={() => carouselApi.current?.scrollTo(carouselApi.current?.selectedScrollSnap() + 3)}

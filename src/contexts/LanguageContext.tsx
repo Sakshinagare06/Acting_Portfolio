@@ -83,7 +83,9 @@ const translations = {
     // 'experience.film7.year': '2021',
     // 'experience.film7.desc': 'Classical production at Prithvi Theatre.',
     // 'experience.film7.link': 'Watch Video',
-
+    
+    //photos
+    'photos.title': 'Shared Frames',
     
     // Audition
     'audition.title': 'Audition',
@@ -279,6 +281,9 @@ const translations = {
     'experience.film6.year': '२०२१',
     'experience.film6.desc': 'आमदार म्हणून',
     'experience.film6.link': 'व्हिडिओ पहा',
+
+    //photos
+    'photos.title':'सहकलाकार',
 
     // Audition
     'audition.title': 'ऑडिशन',
